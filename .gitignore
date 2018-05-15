@@ -1,0 +1,8 @@
+# .DS_Store
+.DS_Store
+
+# MNIST data
+MNIST-data
+
+# jupyter checkpoints
+.ipynb_checkpoints
