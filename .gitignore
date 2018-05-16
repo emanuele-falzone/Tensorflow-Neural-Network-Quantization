@@ -7,3 +7,6 @@ MNIST-data-png
 
 # jupyter checkpoints
 .ipynb_checkpoints
+
+# logdir
+logdir
