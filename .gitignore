@@ -3,6 +3,7 @@
 
 # MNIST data
 MNIST-data
+MNIST-data-png
 
 # jupyter checkpoints
 .ipynb_checkpoints
