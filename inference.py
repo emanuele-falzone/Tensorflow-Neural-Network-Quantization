@@ -30,7 +30,7 @@ def load_image(file_name):
 def predict(graph, image):
 	input_operation = graph.get_operation_by_name("import/Placeholder");
 	output_operation = graph.get_operation_by_name("import/final_result");
-
+	
 	with tf.Session(graph=graph) as sess:
 		start = time.time()
 		results = sess.run(output_operation.outputs[0],
@@ -61,8 +61,3 @@ if __name__ == "__main__":
 
 	else:
 		parser.print_help()
-
-
-
-
-
