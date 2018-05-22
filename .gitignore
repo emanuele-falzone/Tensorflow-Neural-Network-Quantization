@@ -10,3 +10,6 @@ MNIST-data-png
 
 # logdir
 logdir
+
+# cifar10 data
+cifar-10-batches-py

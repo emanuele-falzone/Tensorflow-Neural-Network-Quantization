@@ -32,10 +32,12 @@ def predict(graph, image):
 	output_operation = graph.get_operation_by_name("import/final_result");
 	
 	with tf.Session(graph=graph) as sess:
-		start = time.time()
-		results = sess.run(output_operation.outputs[0],
-			  {input_operation.outputs[0]: image})
-		end=time.time()
+		for i in range(0,10):
+			start = time.time()
+			results = sess.run(output_operation.outputs[0],
+		  		{input_operation.outputs[0]: image})
+			end=time.time()
+			print('{:.9f}s  '.format(end-start))
 	results = np.squeeze(results)
 	return results, end-start
 
@@ -52,7 +54,7 @@ if __name__ == "__main__":
 
 		results, prediction_time = predict(graph, image)
 
-		print('Evaluation time: {:.9f}s\n'.format(prediction_time))
+		#print('Evaluation time: {:.9f}s\n'.format(prediction_time))
 
 		top_k = results.argsort()[-5:][::-1]
 
