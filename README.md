@@ -1,6 +1,8 @@
 # Tensorflow Neural Network Quantization
 This is a school project for the Advanced Computer Architectures class @PoliMi, 2017-2018.
 
+Be careful, the repository contains also the datasets and all the model files.
+
 You can see the main results of MNIST models evaluation looking at these notebooks:
 [Model (a)](https://github.com/emanuele-falzone/Tensorflow-Neural-Network-Quantization/blob/master/MNIST/performance-small.ipynb), 
 [Model (b)](https://github.com/emanuele-falzone/Tensorflow-Neural-Network-Quantization/blob/master/MNIST/performance-big.ipynb)
@@ -15,6 +17,11 @@ Tensorflow is an open source framework for machine learning applications such as
 * Ubuntu 16.04 LTS
 * Python 2.7
 * Tensorflow 1.8 version with CPU only support
+
+We used a desktop pc assempled with:
+* [Inter Core i7 2600K](https://ark.intel.com/it/products/52214/Intel-Core-i7-2600K-Processor-8M-Cache-up-to-3_80-GHz)
+* [8 GB DDR3 1333 Mhz RAM](https://www.corsair.com/it/it/Categories/Products/Memory/High-Performance-Memory/Vengeance%C2%AE-Low-Profile-%E2%80%94-8GB-Dual-Channel-DDR3-Memory-Kit/p/CML8GX3M2A1600C9)
+* [Nvidia GTX 960 4GB](https://www.evga.com/products/specs/gpu.aspx?pn=dc087073-987f-477e-8258-800938653730)
 
 To install Tensorflow with CPU only support and jupyter notebook run:
 
